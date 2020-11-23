@@ -1,0 +1,63 @@
+.tesimonials {
+    padding-top: 52px;
+    padding-bottom: 65px;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 0;
+    }
+}
+
+.tesimonials__text {
+    margin-top: 43px;
+
+    color: $light-black;
+    font-style: italic;
+    font-weight: normal;
+    font-family: Georgia,Times,Times New Roman,serif;
+
+    text-align: center;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 0 30px;
+    }
+}
+
+.tesimonials__slider {
+    margin-top: 55px;
+}
+
+.tesimonials__item {
+    width: 265px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.tesimonials__img {
+    width: 120px;
+    height: 120px;
+
+    font-size: 0;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+}
+
+.tesimonials__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tesimonials__name {
+    color: $black;
+
+    text-transform: uppercase;
+}
+
+.tesimonials__post {
+    margin-top: 2px;
+
+    color: #999999;
+}

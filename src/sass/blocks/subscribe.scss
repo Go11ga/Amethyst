@@ -1,0 +1,51 @@
+.subscribe {
+    padding-top: 26px;
+    padding-bottom: 24px;
+
+    background-color: $light-black;
+}
+
+.subscribe__links {
+    width: 230px;
+    margin: 24px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__link {
+    display: block;
+    width: 62px;
+    height: 62px;
+
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    position: relative;
+
+    transition: border-color .2s linear;
+
+    &:hover {
+        border-color: darken($white, 20%);
+
+        .subscribe__icon {
+            fill: darken($white, 20%);
+        }
+    }
+}
+
+.subscribe__icon {
+    height: 30px;
+    width: 25px;
+
+    fill: $white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+
+    transition: fill .2s linear;
+}

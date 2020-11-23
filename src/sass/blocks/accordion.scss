@@ -1,0 +1,107 @@
+.accordion {
+
+}
+
+.accordion__card {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 5px;
+    }
+}
+
+.accordion__title {
+    height: 40px;
+    padding: 0 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid $purple;
+    border-radius: 5px;
+
+    @media (max-width: $breakpoint-sm) {
+        font-size: 14px;
+    }
+}
+
+.accordion__title--active {
+    background-color: $purple;
+
+    .faq__title-header {
+        color: $white;
+    }
+
+    .faq__title-btn {
+        color: $white;
+
+        &:hover {
+            color: $grey;
+        }
+    }
+}
+
+.accordion__title-header {
+    font-weight: 700;
+    color: $black;
+}
+
+.accordion__title-btn {
+    color: $grey;
+    font-size: 24px;
+    font-weight: 700;
+
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+
+    cursor: pointer;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+.accordion__title-plus {
+    display: none;
+}
+
+.accordion__title-plus--active {
+    display: inline-block;
+}
+
+.accordion__title-minus {
+    display: none;
+}
+
+.accordion__title-minus--active {
+    display: inline-block;
+}
+
+.accordion__text {
+    height: 0;
+    margin-top: -5px;
+
+    overflow: hidden;
+
+    color: $light-black;
+
+    border: 0;
+
+    transition: height .5s linear, padding-top .5s linear, padding-bottom .5s linear;
+}
+
+.accordion__text--active {
+    padding: 19px 14px 14px;
+
+    overflow: auto;
+    overflow-y: hidden;
+
+    color: $light-black;
+
+    border: 1px solid $purple;
+    border-top: 0;
+}

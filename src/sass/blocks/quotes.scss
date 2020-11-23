@@ -1,0 +1,65 @@
+.quotes {
+    padding-top: 195px;
+    padding-bottom: 116px;
+
+    background-color: $light-black;
+
+    @media (max-width: $breakpoint-lg) {
+        padding: 100px 20px;
+    }
+}
+
+.quotes__item {
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        width: 60px;
+        height: 2px;
+
+        background-color: $white;
+
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate(-50%, 0);
+    }
+}
+
+.quotes__author {
+    margin-top: 45px;
+
+    font-size: 22px;
+    font-style: italic;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

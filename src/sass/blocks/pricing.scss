@@ -1,0 +1,160 @@
+.pricing {
+    padding-top: 52px;
+    padding-bottom: 65px;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 10px;
+    }
+}
+
+.pricing__btn-container {
+    padding: 2px 0;
+    margin: 36px auto 0;
+    width: 188px;
+
+    text-align: center;
+
+    border: 2px solid $grey;
+    border-radius: 22px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__btn {
+    display: inline-block;
+    padding: 8px 11px;
+    width: 90px;
+
+    font-family: 'Lato', ;
+    font-size: 14px;
+    color: $light-black;
+
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 0;
+    border-radius: 16px;
+    outline: 0;
+
+    cursor: pointer;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:hover {
+        color: darken($light-black, 30%);
+    }
+}
+
+.pricing__btn--active {
+    color: $white;
+
+    background-color: $purple;
+
+    &:hover {
+        color: darken($white, 30%);
+    }
+}
+
+.pricing__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing__item {
+    width: 368px;
+    margin: 38px auto 0;
+
+    text-align: center;
+
+    border: 1px solid $grey;
+}
+
+.pricing__title {
+    margin-top: 37px;
+
+    font-size: 22px;
+    color: $purple;
+
+    text-transform: uppercase;
+}
+
+.pricing__title--red {
+    color: #bd7677;
+}
+
+.pricing__title--orange {
+    color: $orange;
+}
+
+.pricing__price {
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: 700;
+    color: $purple;
+
+    position: relative;
+
+    &:after {
+        display: block;
+        content: "";
+        width: 235px;
+        height: 2px;
+
+        background-color: $purple;
+
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate(-50%, 0);
+
+    }
+}
+
+.pricing__price--red {
+    color: #bd7677;
+
+    &:after {
+        background-color: #bd7677;
+    }
+}
+
+.pricing__price--orange {
+    color: $orange;
+
+    &:after {
+        background-color: $orange;
+    }
+}
+
+.pricing__price--small {
+    font-size: 18px;
+}
+
+.pricing__ul {
+    margin-top: 48px;
+
+    color: #999999;
+
+    list-style-type: none;
+}
+
+.pricing__li {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+

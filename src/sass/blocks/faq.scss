@@ -1,0 +1,33 @@
+.faq {
+    padding-bottom: 65px;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 0 10px 50px;
+    }
+}
+
+.faq__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq__item {
+    width: 48%;
+
+    @media (max-width: $breakpoint-lg) {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

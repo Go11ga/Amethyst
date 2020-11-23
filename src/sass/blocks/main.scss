@@ -1,0 +1,138 @@
+.main {
+    margin-top: 133px;
+}
+
+.main--active {
+    margin-top: 200px;
+}
+
+.main__inner {
+    position: relative;
+}
+
+.main__title {
+    margin-top: 158px;
+
+    font-size: 100px;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 70px;
+        margin-top: 50px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        font-size: 60px;
+    }
+}
+
+.main__suptitle {
+    font-size: 30px;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $breakpoint-xl) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 25px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        font-size: 20px;
+    }
+}
+
+.main__text {
+    margin: 60px auto 0;
+    width: 835px;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    @media (max-width: $breakpoint-lg) {
+        width: 100%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+}
+
+.main__arrow-cover {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+
+    @media (max-width: $breakpoint-lg) {
+        top: 35%;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        top: 25%;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        display: none;
+    }
+}
+
+.main__arrow-cover--right {
+    left: auto;
+    right: 0;
+    z-index: 1;
+
+    transform: rotate(180deg);
+}
+
+.main__arrow {
+    width: 30px;
+    height: 30px;
+
+    border: 3px solid $grey;
+    border-radius: 50%;
+    background: transparent;
+    outline: 0;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: border-color .2s linear;
+
+    &:hover {
+        border-color: $white;
+
+        .main__icon {
+            fill: $white;
+        }
+    }
+}
+
+.main__icon {
+    height: 15px;
+    width: 10px;
+
+    fill: $grey;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+    transition: fill .2s linear;
+}

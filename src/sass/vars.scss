@@ -1,0 +1,32 @@
+$purple: #8f66b9;
+$orange: #ca7f2f;
+$white: #ffffff;
+$grey: #cccccc;
+$black: #333333;
+$light-black: #666666;
+
+$works-list-item-height: 213px;
+
+$breakpoint-sm: 575px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 991px;
+$breakpoint-xl: 1229px;
+
+/* Bootstrap variables */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1230px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$grid-columns: 24;
+$grid-gutter-width: 0;

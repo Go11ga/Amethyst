@@ -1,0 +1,71 @@
+/* Variables */
+@import "vars";
+
+
+/* Default styles */
+body {
+    background-color: $white;
+
+    font-family: 'Lato', ;
+    color: $white;
+    font-size: 16px;
+
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* Nonstandard fonts */
+@font-face {
+    font-family: 'andersregular';
+    src: url('../fonts/anders.woff2') format('woff2'),
+         url('../fonts/anders.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Bootstrap */
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "../../node_modules/bootstrap/scss/_grid";
+@import "../../node_modules/bootstrap/scss/_utilities";
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/main";
+@import "blocks/btn";
+@import "blocks/about";
+@import "blocks/title";
+@import "blocks/works";
+@import "blocks/tesimonials";
+@import "blocks/company";
+@import "blocks/facts";
+@import "blocks/quotes";
+@import "blocks/services";
+@import "blocks/team";
+@import "blocks/skills";
+@import "blocks/benefits";
+@import "blocks/pricing";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/tab";
+@import "blocks/blog";
+@import "blocks/subscribe";
+@import "blocks/contact";
+@import "blocks/footer";
+
+
+
+/* Slick */
+@import "vendor/slick";

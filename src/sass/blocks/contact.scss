@@ -1,0 +1,139 @@
+.contact {
+    padding-top: 54px;
+    padding-bottom: 65px;
+
+    @media (max-width: $breakpoint-sm) {
+        padding: 50px 20px;
+    }
+}
+
+.contacts {
+    width: 560px;
+    margin: 29px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-sm) {
+        width: auto;
+    }
+}
+
+.contact__link {
+    display: inline-block;
+    margin: 10px auto 0;
+
+    font-size: 14px;
+    color: #999;
+
+    text-decoration: none;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: darken(#999999, 20%);
+        .contact__icon {
+            fill: darken(#999999, 20%);
+        }
+    }
+}
+
+.contact__icon {
+    padding-top: 5px;
+    width: 10px;
+    height: 14px;
+
+    fill: #999;
+
+    transition: fill .2s linear;
+}
+
+.contact__blackback {
+    margin-top: 30px;
+    height: 400px;
+
+    color: $black;
+
+    background-color: $black;
+}
+
+.contact__title {
+    margin-top: 32px;
+
+    color: $light-black;
+
+    text-align: center;
+}
+
+.contact__form {
+    width: 570px;
+    margin: 35px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+    }
+}
+
+.contact__input {
+    padding: 8px 10px;
+    margin-bottom: 30px;
+    width: 270px;
+
+    font-family: 'Lato', ;
+    font-size: 14px;
+
+    border: 1px solid $grey;
+    border-radius: 5px;
+    outline: none;
+
+    &::placeholder {
+        color: $grey;
+    }
+
+    &:focus {
+        border-color: $purple;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        width: 100%;
+    }
+}
+
+.contact__input--100 {
+    width: 100%;
+}
+
+.input__textarea {
+    padding: 8px 10px;
+    width: 100%;
+    height: 112px;
+
+    font-family: 'Lato', ;
+    font-size: 14px;
+    color: $grey;
+
+    border: 1px solid $grey;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+
+    &:focus {
+        border-color: $purple;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

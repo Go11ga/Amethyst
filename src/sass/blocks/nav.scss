@@ -1,0 +1,40 @@
+.nav {
+    margin: 20px auto 0;
+    width: 656px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+.nav--active {
+    display: block;
+}
+
+.nav__item {
+    color: $white;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: darken($white, 20%);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        padding-left: 20px;
+        display: inline-block;
+        width: 100%;
+
+        text-align: left;
+    }
+}
+
+.nav__item--active {
+    color: darken($white, 20%);
+}
