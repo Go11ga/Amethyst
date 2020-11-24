@@ -1,7 +1,7 @@
 {
-  "name": "skeleton",
+  "name": "amethyst",
   "version": "1.0.0",
-  "description": "enviroment by gulp4",
+  "description": "by gulp4",
   "author": "Igor Khromov",
   "devDependencies": {
     "browser-sync": "^2.26.7",
